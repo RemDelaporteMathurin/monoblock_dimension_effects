@@ -64,7 +64,7 @@ h_transport_bcs = [
 model.boundary_conditions = heat_transfer_bcs + h_transport_bcs
 
 model.settings = F.Settings(
-    absolute_tolerance=1e4,
+    absolute_tolerance=1e5,
     relative_tolerance=1e-5,
     maximum_iterations=15,
     traps_element_type="DG",
@@ -88,6 +88,7 @@ derived_quantities = F.DerivedQuantities(
         F.SurfaceFlux(field="solute", surface=id_bottom),
     ],
     filename="src/model_3d/results/derived_quantities.csv",
+    nb_iterations_between_exports=1,
 )
 
 model.exports = F.Exports(
