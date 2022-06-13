@@ -1,9 +1,9 @@
-# # 3D
-# from src.model_3d.model import model as model_3D
+# 3D
+from src.model_3d.model import model as model_3D
 
-# model_3D.log_level = 20
-# model_3D.initialise()
-# model_3D.run()
+model_3D.log_level = 30
+model_3D.initialise()
+model_3D.run()
 
 # 2D
 from src.model_2d.model import model as model_2D
