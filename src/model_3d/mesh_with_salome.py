@@ -107,7 +107,7 @@ NETGEN_3D_Parameters_1.SetNbSegPerRadius(5)
 NETGEN_3D_Parameters_1.SetCheckChartBoundary(0)
 NETGEN_3D_Parameters_1.SetMinSize(0.1e-3)
 NETGEN_3D_Parameters_1.SetCheckChartBoundary(0)
-NETGEN_3D_Parameters_1.SetMaxSize(0.5e-3)
+NETGEN_3D_Parameters_1.SetMaxSize(0.3e-3)
 isDone = Mesh_1.Compute()
 [
     tungsten_1,
