@@ -36,7 +36,7 @@ t_3d = data_3d["ts"]
 
 inventory_3d = (
     sum([data_3d["Total_retention_volume_{}".format(mat_id)] for mat_id in [6, 7, 8]])
-    * 2
+    * 4
 )
 
 plt.figure(figsize=(6.4, 3))
