@@ -39,13 +39,22 @@ inventory_3d = (
     * 2
 )
 
+plt.figure(figsize=(6.4, 3))
+
 plt.plot(t_1d, inventory_1d, label="1D")
 plt.plot(t_2d, inventory_2d, label="2D")
 plt.plot(t_3d, inventory_3d, label="3D")
 
+plt.xlim(left=1e3)
 plt.xscale("log")
 plt.yscale("log")
 # plt.ylim(bottom=0)
+plt.xlabel("Time (s)")
+plt.ylabel("Inventory (H)")
+
+plt.gca().spines.right.set_visible(False)
+plt.gca().spines.top.set_visible(False)
 
 matplotx.line_labels()
+plt.tight_layout()
 plt.show()
